@@ -1,0 +1,1 @@
+export { IRestFulController } from "./IRestFulController";
