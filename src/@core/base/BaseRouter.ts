@@ -1,5 +1,5 @@
 import express, { Router } from "express";
-import { IRestFulController } from "../../interface";
+import { IRestFulController } from "../interface";
 
 export abstract class BaseRouter {
   constructor(

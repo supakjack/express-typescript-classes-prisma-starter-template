@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { IRestFulModel } from "./../../interface/IRestFulModel";
+import { IRestFulModel } from "../interface";
 export abstract class BaseModel implements IRestFulModel {
   constructor(protected repository: PrismaClient = new PrismaClient()) {}
   select() {

@@ -1,4 +1,4 @@
-import { BaseRouter } from "../core/class/abstract";
+import { BaseRouter } from "../@core/base";
 import { AccountController } from "../controller";
 
 export class AccountRouter extends BaseRouter {

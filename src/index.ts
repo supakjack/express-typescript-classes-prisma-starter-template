@@ -1,6 +1,9 @@
-import { Server } from "./core/class";
+import { Express } from "./@core";
+import { RedisHelper, ErrorHelper } from "./@core/helper";
 import routes from "./routes";
-const server = new Server();
-routes(server.getApplication());
-server.errorHandle();
-server.start();
+const app = new Express();
+// const redisHelper = new RedisHelper();  uncomment to use session with redis
+// redisHelper.startWithSession();         uncomment to use session with redis
+routes(Express.application);
+ErrorHelper.start();
+app.start();

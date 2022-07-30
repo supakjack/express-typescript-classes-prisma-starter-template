@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { IRestFulController } from "../../interface";
+import { IRestFulController } from "../interface";
 
 export abstract class BaseController implements IRestFulController {
   public get(request: Request, response: Response): void {
