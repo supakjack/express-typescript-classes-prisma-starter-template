@@ -1,3 +1,3 @@
-import { BaseMoel } from "../core/class/abstract";
+import { BaseModel } from "../core/class/abstract";
 
-export class AccountModel extends BaseMoel {}
+export class AccountModel extends BaseModel {}
