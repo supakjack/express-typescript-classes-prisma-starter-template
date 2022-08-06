@@ -1,6 +1,7 @@
 import { PrismaClient } from "@prisma/client";
-import { IRestFulModel } from "../interface";
-export abstract class BaseModel implements IRestFulModel {
+import { IRestFulModel } from "../type/interface";
+
+export abstract class ApplicationModel implements IRestFulModel {
   constructor(protected repository: PrismaClient = new PrismaClient()) {}
   select() {
     throw new Error("Model - Method select not implemented.");

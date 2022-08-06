@@ -1,7 +1,7 @@
 import express, { Router } from "express";
-import { IRestFulController } from "../interface";
+import { IRestFulController } from "../type/interface";
 
-export abstract class BaseRouter {
+export abstract class ApplicationRouter {
   constructor(
     private controller: IRestFulController,
     private router: Router = express.Router()
